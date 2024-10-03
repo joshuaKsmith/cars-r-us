@@ -1,12 +1,12 @@
 const transientState = {
-    "colorId": 0,
+    "paintId": 0,
     "interiorId": 0,
     "wheelId": 0,
-    "technologyId": 0
+    "techId": 0,
 }
 
 export const setColorChoice = (chosenColor) => {
-    transientState.colorId = chosenColor
+    transientState.paintId = chosenColor
     console.log(transientState)
 }
 
@@ -21,7 +21,7 @@ export const setWheelChoice = (chosenWheel) => {
 }
 
 export const setTechnologyChoice = (chosenTechnology) => {
-    transientState.technologyId = chosenTechnology
+    transientState.techId = chosenTechnology
     console.log(transientState)
 }
 
@@ -29,7 +29,7 @@ export const SaveOrderSubmission = async () => {
     const postOptions = {
         method: "POST",
         headers: {
-            "Content-Type": "application.json"
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(transientState)
     }

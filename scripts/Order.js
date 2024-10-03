@@ -9,7 +9,10 @@ export const OrdersList = async () => {
 
             return `<section>
                 <div>
-                    Order#${order.id}    cost$${orderPrice}
+                    Order#${order.id}    cost${orderPrice.toLocaleString("en-US", {
+                        style: "currency",
+                        currency: "USD"
+                    })}
                 </div>
             </section>`
         }

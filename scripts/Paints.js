@@ -18,7 +18,7 @@ export const PaintOptions = async () => {
     `
     const paintsStringArray = paints.map(
         (paint) => {
-            return `<option value="${paint.id}">${paint.paint}</option>`
+            return `<option value="${paint.id}">${paint.color}</option>`
         }
     )
     paintsHTML += paintsStringArray.join("")

@@ -10,7 +10,7 @@ export const WheelOptions = async () => {
     const response = await fetch("http://localhost:8088/wheels")
     const wheels = await response.json()
 
-    document.addEventListener("change", setWheelChoice)
+    document.addEventListener("change", handleWheelChoice)
     
     let wheelsHTML = `<h2>Wheels</h2>
         <select id="wheel">
