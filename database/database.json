@@ -136,6 +136,14 @@
       "technologyId": 2,
       "varietyId": 2,
       "id": 4
+    },
+    {
+      "paintId": 4,
+      "interiorId": 1,
+      "wheelId": 2,
+      "technologyId": 1,
+      "varietyId": 3,
+      "id": 5
     }
   ]
 }
