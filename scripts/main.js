@@ -4,6 +4,7 @@ import { PaintOptions } from "./Paints.js"
 import { TechnologyOptions } from "./Technologies.js"
 import { SaveOrder } from './PlaceOrder.js'
 import { OrdersList } from './Order.js'
+import { VarietyOptions } from './Types.js'
 
 const container = document.querySelector('#container')
 
@@ -19,13 +20,15 @@ const render = async () => {
         interiorOptionsHTML, 
         paintOptionsHTML, 
         technologyOptionsHTML, 
-        ordersListHTML 
+        ordersListHTML,
+        varietyListHTML,
     ] = await Promise.all([
         WheelOptions(),
         InteriorOptions(),
         PaintOptions(),
         TechnologyOptions(),
         OrdersList(),
+        VarietyOptions(),
     ])
 
     const buttonHTML = SaveOrder()
@@ -47,6 +50,9 @@ const render = async () => {
             </section>
         </article>
         <article class="order">
+            <section class="types">
+                ${varietyListHTML}
+            </section>
             ${buttonHTML}
         </article>
         <article class="customOrders">
