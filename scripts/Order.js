@@ -1,11 +1,11 @@
 export const OrdersList = async () => {
-    const fetchResponse = await fetch("http://localhost:8088/orders?_expand=tech&_expand=wheel&_expand=paint&_expand=interior")
+    const fetchResponse = await fetch("http://localhost:8088/orders?_expand=technology&_expand=wheel&_expand=paint&_expand=interior")
     const orders = await fetchResponse.json()
 
     let ordersHTML = ""
     const ordersStringArray = orders.map(
         (order) => {
-            const orderPrice = order.wheel.price + order.interior.price + order.paint.price + order.tech.price
+            const orderPrice = order.wheel.price + order.interior.price + order.paint.price + order.technology.price
 
             return `<section>
                 <div>
