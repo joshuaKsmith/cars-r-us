@@ -47,7 +47,6 @@ const render = async () => {
             </section>
         </article>
         <article class="order">
-            ${}
             ${buttonHTML}
         </article>
         <article class="customOrders">
