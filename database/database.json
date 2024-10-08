@@ -65,26 +65,43 @@
       "price": 275.5
     }
   ],
-  "teches": [
+  "technologies": [
     {
       "id": 1,
-      "tech": "Basic Package",
+      "technology": "Basic Package",
       "price": 100.25
     },
     {
       "id": 2,
-      "tech": "Navigation Package",
+      "technology": "Navigation Package",
       "price": 155.75
     },
     {
       "id": 3,
-      "tech": "Visibility Package",
+      "technology": "Visibility Package",
       "price": 155.75
     },
     {
       "id": 4,
-      "tech": "Ultra Package",
+      "technology": "Ultra Package",
       "price": 200.5
+    }
+  ],
+  "varieties": [
+    {
+      "id": 1,
+      "type": "Car",
+      "modifier": 100
+    },
+    {
+      "id": 2,
+      "type": "SUV",
+      "modifier": 150
+    },
+    {
+      "id": 3,
+      "type": "Truck",
+      "modifier": 2250
     }
   ],
   "orders": [
@@ -92,50 +109,41 @@
       "paintId": 1,
       "interiorId": 1,
       "wheelId": 1,
-      "techId": 1,
-      "id": 1
+      "technologyId": 1,
+      "id": 1,
+      "varietyId": 1
     },
     {
       "paintId": 1,
       "interiorId": 1,
       "wheelId": 2,
-      "techId": 1,
-      "id": 2
+      "technologyId": 1,
+      "id": 2,
+      "varietyId": 2
     },
     {
       "paintId": 1,
       "interiorId": 1,
       "wheelId": 1,
-      "techId": 2,
-      "id": 3
+      "technologyId": 2,
+      "id": 3,
+      "varietyId": 3
     },
     {
-      "paintId": 1,
-      "interiorId": 3,
-      "wheelId": 3,
-      "techId": 2,
-      "id": 4
-    },
-    {
-      "paintId": 1,
+      "paintId": 2,
       "interiorId": 2,
-      "wheelId": 2,
-      "techId": 2,
-      "id": 5
+      "wheelId": 1,
+      "technologyId": 2,
+      "varietyId": 2,
+      "id": 4
     },
     {
       "paintId": 4,
       "interiorId": 1,
       "wheelId": 2,
-      "techId": 4,
-      "id": 6
-    },
-    {
-      "paintId": 2,
-      "interiorId": 4,
-      "wheelId": 4,
-      "techId": 4,
-      "id": 7
+      "technologyId": 1,
+      "varietyId": 3,
+      "id": 5
     }
   ]
 }

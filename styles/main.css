@@ -1,0 +1,9 @@
+.types {
+    display:flex;
+    margin-top:25px;
+}
+
+#saveOrder {
+    margin-left:30px;
+    margin-top:10px;
+}
